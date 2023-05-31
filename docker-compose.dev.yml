@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  app:
+    container_name: matchmaking_front
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    restart: always
+    environment:
+      PORT: ${PORT}
+    ports:
+      - '10001:3000'
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/.svelte-kit:/app/.svelte-kit
+      - ./frontend/static:/app/static
+#      - ./frontend/tailwind.config.cjs:/app/tailwind.config.cjs
+      - ./.env:/app/.env
