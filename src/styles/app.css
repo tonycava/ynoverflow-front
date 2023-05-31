@@ -6,13 +6,13 @@
 
 @layer base {
     html {
-        background-color: #1f2029;
+        background-color: hsl(0, 0%, 24%);
         min-height: 100vh;
     }
 
     :root {
-        --color-primary: #020305;
-        --color-secondary: #ffeba7;
+        --color-primary: #ffeba7;
+        --color-secondary: #020305;
         --color-text-primary: #ffeba7;
         --color-text-secondary: #020305;
     }
