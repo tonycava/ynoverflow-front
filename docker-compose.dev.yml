@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   app:
-    container_name: matchmaking_front
+    container_name: ynoverflow_front
     build:
       context: .
       dockerfile: Dockerfile.dev
