@@ -12,6 +12,11 @@ export default defineConfig({
 		strictPort: true,
 		port: +(process.env.PORT ?? '3000'),
 	},
+	resolve: {
+		alias: {
+			'@styles': path.resolve('./src/styles'),
+		},
+	},
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}'],
 	},
