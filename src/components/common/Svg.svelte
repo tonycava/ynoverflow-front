@@ -20,9 +20,9 @@
 </script>
 
 <div
-  on:click
-  style="height: {0.25 * size}rem; width: {0.25 * size}rem;"
-  class="[&>svg]:h-full [&>svg]:w-full {className}"
+        on:click
+        style="height: {0.25 * size}rem; width: {0.25 * size}rem;"
+        class="[&>svg]:h-full [&>svg]:w-full {className}"
 >
-  {@html svg}
+    {@html svg}
 </div>

@@ -13,7 +13,7 @@
 />
 <InputField
   placeholder="example"
-  title="Username"
+  title="Email"
   name={INPUT.USERNAME}
 />
 <InputField
