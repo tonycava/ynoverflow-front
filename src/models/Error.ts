@@ -6,4 +6,8 @@ export type YnoverflowResponse<T> = {
     data: T;
 }
 
+export type FormFailure = {
+    internalError: string
+}
+
 export type FormActionResponse = ({ result, update }: { result: ActionResult, update: () => void }) => Promise<void>;

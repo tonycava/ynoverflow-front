@@ -3,6 +3,6 @@
     export let className = "";
 </script>
 
-<button {type} class="bg-[#E7E9EB] py-2 rounded {className}">
+<button {type} class="bg-primary text-[#E7E9EB] font-poppins-bold py-2 rounded {className}">
   <slot />
 </button>

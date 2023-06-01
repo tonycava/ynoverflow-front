@@ -7,11 +7,11 @@
 </script>
 
 <fieldset class="flex gap-1 flex-col">
-  <p class="text-[#E7E9EB] font-poppins-bold">{title}</p>
+  <p class="text-primary font-poppins-bold">{title}</p>
   <input
     {name}
     {placeholder}
-    class="bg-zinc-800 p-2 border-2 rounded text-[#E7E9EB]"
+    class="bg-zinc-800 p-2 border-2 rounded text-secondary w-full"
     bind:value
     type="text"
   />
