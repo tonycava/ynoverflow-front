@@ -6,6 +6,7 @@
     import Loading from "@components/common/Loading.svelte";
     import type { LayoutServerData } from "./$types";
     import { capitalize } from "$lib/utils";
+    import IconYnoverflow from "@components/icons/IconYnoverflow.svelte";
 
     let isLoading = false;
     export let data: LayoutServerData;
@@ -23,20 +24,7 @@
 {/if}
 
 <div class="flex justify-center items-center h-screen flex-col gap-6">
-  <div class="flex items-center gap-3">
-    <img
-      src="/favicon.png"
-      class="h-16 w-16"
-      alt="Site logo"
-    />
-    <span class="text-3xl text-secondary font-poppins-regular">X</span>
-    <Svg
-      className="-translate-x-1/4"
-      src="/ynov.svg"
-      size={24}
-      color="#E7E9EB"
-    />
-  </div>
+  <IconYnoverflow/>
   <div class="bg-zinc-800 p-8 rounded-lg w-11/12 md:w-auto shadow-lg">
     <form
       action={`?/${data.title}`}
